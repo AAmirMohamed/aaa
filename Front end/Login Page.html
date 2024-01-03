@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+
+  <!-- Login Form -->
+  <form id="loginForm" onsubmit="login()">
+    <h1>Login</h1>
+    <label for="loginName">Username:</label>
+    <input type="text" id="loginName">
+    <label for="loginPass">Password:</label>
+    <input type="password" id="loginPass">
+    <button type="submit">Login</button>
+    <br>
+    <a href="#forForm">Forget Password</a>
+    <br>
+    Don't have an account?
+    <a href="#signupForm">Sign Up</a>
+  </form>
+  <br>
+
+  <!-- Sign Up Form -->
+  <form id="signupForm">
+    <h1>Sign UP</h1>
+    <label for="name">UserName:</label>
+    <input type="text" id="name">
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+    <label for="cpassword">Confirm Password:</label>
+    <input type="password" id="cpassword">
+    <label for="age">Age:</label>
+    <input type="age" id="age">
+    <label for="gender">Gender:</label>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone">
+    <button type="submit" onclick="addUser()">Sign Up</button>
+  </form>
+  <br>
+
+  <!-- Forget Password Form -->
+  <form id="forForm">
+    <h1>Forget Password</h1>
+    <label for="forgetName">Username</label>
+    <input type="text" id="forgetName">
+    <label for="forgetNewPass">New Password</label>
+    <input type="password" id="forgetNewPass">
+    <button type="submit" onclick="update()">Update</button>
+  </form>
+
+  <script src="Login.js"> </script>
+
+</body>
+
+</html>
